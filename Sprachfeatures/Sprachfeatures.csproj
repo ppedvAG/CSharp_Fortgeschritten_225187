@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,5 +7,10 @@
     <Nullable>disable</Nullable>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
-
+	<ItemGroup>
+		<Using Remove="System.Threading"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Using Remove="System.Threading.Tasks"/>
+	</ItemGroup>
 </Project>
